@@ -494,7 +494,6 @@ body {
 
 .footer-container {
   display: flex;
-
   align-items: baseline;
 }
 
@@ -513,8 +512,11 @@ body {
 
 .footer-text {
   color: var(--color-cloud);
-  /* padding-top: 16px; */
   width: 264px;
+}
+
+.footer-social-container {
+  margin-right: 80px;
 }
 
 .footer-social-text {
@@ -558,6 +560,93 @@ body {
   fill: var(--color-cloud);
 }
 
+.subscribe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+
+  margin-bottom: 16px;
+}
+
+/* .footer-form {
+  display: flex;
+  gap: 24px;
+} */
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.subscribe-form-field {
+  background-color: transparent;
+  width: 264px;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  padding: 8px 16px;
+  color: var(--color-white);
+
+  border: 1px solid var(--color-white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  outline: none;
+}
+
+.subscribe-form-field::placeholder {
+  color: var(--color-white);
+}
+
+/* .subscribe-form-field:focus {
+  border: 1px solid var(--color-slate);
+  outline: none;
+} */
+
+.subscribe-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  padding: 8px 24px;
+  background-color: var(--color-iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--color-white);
+
+  border: none;
+
+  transition: background-color var(--anim-time);
+}
+
+.subscribe-icon {
+  fill: currentColor;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--color-ocean);
+}
+
 /**
   |============================
   | Portfolio
@@ -590,8 +679,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
-  cursor: pointer;
 
   background-color: var(--color-cloud);
   border: 1px solid var(--color-cornflower);
