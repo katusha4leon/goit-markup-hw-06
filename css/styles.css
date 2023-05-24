@@ -858,7 +858,6 @@ body {
 }
 
 .modal-title {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -874,8 +873,6 @@ body {
   display: block;
   margin-bottom: 4px;
 
-  font-family: inherit;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -930,19 +927,23 @@ body {
   outline: none;
   border: 1px solid var(--color-navy-blue-modal);
   border-radius: 4px;
+  transition: border-color var(--anim-time);
+}
 
-  font-family: inherit;
-  font-weight: 400;
+.modal-comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
 
-  color: var(--color-navy-blue-modal);
+  color: var(--color-light-slate);
+}
+
+.modal-comment:focus {
+  border-color: var(--color-iris);
 }
 
 .modal-agreement {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 8px;
 
@@ -975,7 +976,6 @@ body {
 }
 
 .text-agreement {
-  font-family: inherit;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -994,7 +994,6 @@ body {
   min-width: 167px;
   min-height: 56px;
 
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
